@@ -1,6 +1,15 @@
-/** @type {import('postcss-load-config').Config} */
-const config = {
-  plugins: [require('autoprefixer'), require('postcss-nested')],
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
 };
 
-module.exports = config;
+// /** @type {import('postcss-load-config').Config} */
+// const tailwindcss = require('tailwindcss');
+
+// const config = {
+//   plugins: [require('autoprefixer'), require('postcss-nested'), tailwindcss],
+// };
+
+// module.exports = config;
