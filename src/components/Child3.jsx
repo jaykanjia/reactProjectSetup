@@ -6,9 +6,18 @@ class Child3 extends Component {
     this.state = {};
   }
 
+  // eslint-disable-next-line no-unused-vars
+  shouldComponentUpdate(nextProps, nextState) {
+    return false;
+  }
+
   render() {
     console.log('hello from child 3');
-    return <div>Child3</div>;
+    return (
+      <div>
+        <h2>Child3</h2>
+      </div>
+    );
   }
 }
 
